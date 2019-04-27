@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DevProfile</string>
+    <string name="banner">banner</string>
+    <string name="logo">logo</string>
+    <string name="devslopes">DevSlopes</string>
+    <string name="camera">camera</string>
+    <string name="favorite">favorite</string>
+    <string name="achirve">achirve</string>
 </resources>
