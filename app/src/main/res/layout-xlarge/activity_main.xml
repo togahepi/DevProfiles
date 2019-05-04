@@ -12,13 +12,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintDimensionRatio=""
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" android:contentDescription="@string/banner"/>
     <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp" app:srcCompat="@drawable/devslopesprofilelogo"
             android:id="@+id/logo"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
-            android:layout_marginTop="180dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="180dp" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/logo"/>
     <TextView
             android:text="@string/devslopes"
             android:layout_width="wrap_content"
@@ -33,7 +34,8 @@
             app:layout_constraintStart_toEndOf="@+id/textView" app:layout_constraintHorizontal_bias="0.64"
             app:layout_constraintEnd_toStartOf="@+id/imageView11" app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintTop_toTopOf="@+id/imageView11"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView11" app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11" app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/camera"/>
     <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp" app:srcCompat="@drawable/favoritebutton"
@@ -42,14 +44,16 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView12" app:layout_constraintHorizontal_chainStyle="packed"
             android:layout_marginEnd="24dp" android:layout_marginStart="24dp"
             app:layout_constraintTop_toTopOf="@+id/imageView12"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView12" app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12" app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/favorite"/>
     <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp" app:srcCompat="@drawable/inboxbutton"
             android:id="@+id/imageView12"
             app:layout_constraintStart_toEndOf="@+id/imageView11" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="packed"
-            android:layout_marginTop="44dp" app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+            android:layout_marginTop="44dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:contentDescription="@string/archive"/>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/dataimage"
@@ -58,7 +62,7 @@
             android:layout_marginTop="60dp" app:layout_constraintTop_toBottomOf="@+id/logo"
             app:layout_constraintDimensionRatio="16:9" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="32dp" android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView17"/>
+            app:layout_constraintBottom_toTopOf="@+id/imageView17" android:contentDescription="@string/dataimage"/>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/imagesimage"
@@ -66,14 +70,16 @@
             app:layout_constraintTop_toTopOf="@+id/imageView13"
             app:layout_constraintDimensionRatio="16:9" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="32dp"
-            app:layout_constraintStart_toStartOf="@+id/guideline" android:layout_marginStart="32dp"/>
+            app:layout_constraintStart_toStartOf="@+id/guideline" android:layout_marginStart="32dp"
+            android:contentDescription="@string/photoimage"/>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/codeimage"
             android:id="@+id/imageView15" android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/imageView14" app:layout_constraintEnd_toEndOf="@+id/imageView14"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            android:layout_marginStart="32dp" app:layout_constraintDimensionRatio="16:9"/>
+            android:layout_marginStart="32dp" app:layout_constraintDimensionRatio="16:9"
+            android:contentDescription="@string/codeimage"/>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/videosimage"
@@ -81,18 +87,19 @@
             app:layout_constraintStart_toStartOf="@+id/imageView13"
             android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageView13"
             app:layout_constraintEnd_toStartOf="@+id/guideline" android:layout_marginEnd="32dp"
-            app:layout_constraintDimensionRatio="16:9"/>
+            app:layout_constraintDimensionRatio="16:9" android:contentDescription="@string/camera"/>
     <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
                                           android:id="@+id/guideline"
                                           android:orientation="vertical" app:layout_constraintGuide_percent="0.5"/>
     <Button
-            android:text="Customize Dashboard"
+            android:text="@string/customize_dashboard"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:id="@+id/button" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageView17"
-            android:background="#D6461F" style="@style/Widget.AppCompat.Button.Borderless"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            android:background="@drawable/rounded_radient" style="@style/Widget.AppCompat.Button.Borderless"
             android:textColor="@android:color/background_light"
-            android:typeface="normal" android:lineSpacingExtra="12sp" android:textSize="18sp"/>
+            android:typeface="normal" android:lineSpacingExtra="12sp" android:textSize="18sp"
+            android:layout_marginTop="64dp"/>
 </android.support.constraint.ConstraintLayout>

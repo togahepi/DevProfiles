@@ -7,4 +7,9 @@
     <string name="favorite">favorite</string>
     <string name="achirve">achirve</string>
     <string name="customize_dashboard">Customize Dashboard</string>
+    <string name="dataimage">dataImage</string>
+    <string name="coderimage">coderImage</string>
+    <string name="photoimage">photoImage</string>
+    <string name="codeimage">codeImage</string>
+    <string name="archive">archive</string>
 </resources>
